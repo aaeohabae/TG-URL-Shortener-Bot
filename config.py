@@ -12,7 +12,7 @@ ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.env
 ADMIN = ADMINS
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Greylinks")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://aaroha:aaroha@cluster0.xfupmjy.mongodb.net/?retryWrites=true&w=majority") # mongodb uri from https://www.mongodb.com/
-OWNER_ID =  int(os.environ.get("OWNER_ID", "")) # id of the owner
+OWNER_ID =  int(os.environ.get("OWNER_ID", "6959948002")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 ADMINS.append(6959948002)
 #  Optionnal variables
